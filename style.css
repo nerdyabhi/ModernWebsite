@@ -22,6 +22,8 @@
 
 body{
     color: var(--primary-text-color);
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 h1{
@@ -159,7 +161,8 @@ header
 {
     max-width: 1180px;
     margin-inline:auto;
-    padding-inline:auto;
+    padding-inline:var(--padding-inline-section);
+    overflow: hidden;
 }
 
 .flex
@@ -261,4 +264,146 @@ header
 .logos:hover .logos-slide
 {
     animation-play-state: paused;
+}
+
+/* Features Section */
+
+.features-section
+{
+    margin-top: 30px;
+    background-image: url("/assets/asset\ 32.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-section h2
+{
+    margin-bottom: 20px;
+}
+
+
+
+.features-header
+{
+    text-align: center;
+}
+
+.features-area
+{
+   justify-content: space-evenly;
+   gap: 20px;
+   margin-top:20px;
+   flex-wrap: wrap;
+   padding: 5px;
+
+}
+
+.features-cards
+{
+    /* border: 2px solid red; */
+    /* border-radius: 6px; */
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    max-width: 25%;
+
+}
+
+
+/* Big features section */
+
+.big-features-section
+{
+    margin:30px;
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.feature-img img
+{
+    width:500px;
+}
+
+.big-features-container
+{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+
+/* Examples section */
+
+.example-header
+{
+    text-align: center;
+}
+.example-header a
+{
+    margin-top: 20px;
+}
+
+.examples-area
+{
+    gap: 20px;
+    /* width: 100vw; */
+}
+.example-card
+{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0 , 0, 0.8)) , url('/assets/asset\ 35.jpeg');
+    background-size: cover;
+    filter: grayscale(30);
+
+    /* filter: blur(100%); */
+    margin: 20px;
+    transition: all 0.5 linear;
+    border-radius: 5px;
+}
+
+.example-card:nth-child(2)
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0 , 0, 0.8)) , url('/assets/asset\ 36.jpeg');
+}
+
+.example-card:nth-child(3)
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0 , 0, 0.8)) , url('/assets/asset\ 37.jpeg');
+}
+
+.example-card:nth-child(4)
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) , rgba(0, 0 , 0, 0.8)) , url('/assets/asset\ 34.jpeg');
+}
+
+.card-text
+{
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    display: none;
+    
+}
+
+.example-card:hover .card-text
+{
+    display: block;
+    /* background-color: #919191; */
+    /* text-shadow: 0 0 50px black; */
+}
+
+.example-section
+{
+    background-color: #91919129;
+    padding: 15px;
+}
+.example-card:hover
+{
+    filter: none;
+    box-shadow: 0 0 10px #888;
+    padding: 10px;
 }
