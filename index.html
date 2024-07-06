@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Website using Html and Css</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
@@ -25,7 +27,7 @@
                 <img src="/assets/asset 1.png" alt="Company Logo">
             </a>
 
-            <div class="nav-links">
+            <div id="nav" class="nav-links">
                 <ul class="flex">
                     <li><a class="hover-link" href="#">Products</a></li>
                     <li><a class="hover-link" href="#">Consumers</a></li>
@@ -35,6 +37,8 @@
                     <li><a class="hover-link primary-button" href="#">Login</a></li>
                 </ul>
             </div>
+
+            <a class="nav-toggle hover-link" id="nav-toggle" href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
      </nav>
 
@@ -170,9 +174,7 @@
         </div>
       </section>
       <section class="big-features-section">
-        <div class="container flex big-features-container">
-
-          
+        <div id="big-feature-container-2" class="container flex big-features-container">
             <div class="big-feature-text">
                 <h3>Effortless Validation for</h3>
                 <h2>Design Professionals</h2>
@@ -206,7 +208,7 @@
       <!-- Examples section  -->
        <section class="example-section">
         <div class="container">
-            <div class="example-header ">
+            <div class="example-header flex">
                 <h2>One platform, endless possibilities </h2>
                 <a href="#" class="secondary-button hover-link">See more examples</a>
                 
@@ -285,4 +287,16 @@
         </div>
     </footer>
 </body>
+
+<script>
+
+    // alert("I am working");
+    const togglebutton = document.getElementById("nav-toggle");
+    const navLinks = document.getElementById('nav');
+
+    togglebutton.addEventListener('click' , () => {
+        navLinks.classList.toggle('active')
+    }
+    )
+</script>
 </html>

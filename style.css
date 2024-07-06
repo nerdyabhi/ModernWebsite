@@ -10,6 +10,13 @@
     padding: 0;
 }
 
+.main-nav
+{
+    position: relative;
+}
+
+
+
 /* Initialising variables for future references */
 
 :root{
@@ -76,6 +83,12 @@ a
 
 
 /* Navigation bar */
+
+.nav-toggle
+{
+    display: none;
+    margin-right: 30px;
+}
 .company-logo img
 {
     width: 200px;
@@ -142,7 +155,7 @@ header
 
 .header-right img
 {
-    width: 600px;
+    width: 100%;
 }
 
 
@@ -320,7 +333,7 @@ header
 
 .feature-img img
 {
-    width:500px;
+    width:100%;
 }
 
 .big-features-container
@@ -336,28 +349,28 @@ header
 .example-header
 {
     text-align: center;
-}
-.example-header a
-{
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .examples-area
 {
-    gap: 20px;
-    /* width: 100vw; */
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block:30px
 }
 .example-card
 {
     width: 23%;
     position: relative;
-    min-height: 300px;
+    height: 300px;
     color: white;
     background-image:url("/assets/asset\ 35.jpeg");
     background-size: cover;
     background-position: top;
     background-color: #222;
-    margin: 20px;
+    /* margin: 20px 2px; */
     background-blend-mode: soft-light;
     transition: all 0.3s ease-out;
     border-radius: 5px;
