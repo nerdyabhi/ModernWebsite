@@ -353,7 +353,7 @@ header
     position: relative;
     min-height: 300px;
     color: white;
-    background-image:url("/modernWebsite/assets/asset\ 35.jpeg");
+    background-image:url("/assets/asset\ 35.jpeg");
     background-size: cover;
     background-position: top;
     background-color: #222;
@@ -365,17 +365,17 @@ header
 
 .example-card:nth-child(2)
 {
-    background-image:  url('/modernWebsite/assets/asset\ 36.jpeg');
+    background-image:  url('/assets/asset\ 36.jpeg');
 }
 
 .example-card:nth-child(3)
 {
-    background-image: url('/modernWebsite/assets/asset\ 37.jpeg');
+    background-image: url('/assets/asset\ 37.jpeg');
 }
 
 .example-card:nth-child(4)
 {
-    background-image:  url('/modernWebsite/assets/asset\ 34.jpeg');
+    background-image:  url('/assets/asset\ 34.jpeg');
 }
 
 .card-text
